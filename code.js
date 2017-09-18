@@ -22,6 +22,15 @@
 // F = mass * acceleration
 // 9.8
 
+// define a function called secondLaw that
+// takes an acceleration value and
+// returns a function.
+//The returned function should take a mass as an argument.
+
+// to be used like:
+// let forceOnPlanetEarth = secondLaw(9.8)
+// let force = forceOnPlanetEarth(10)
+
 // forceOnMars(mass)
 // forceOnPlanetEarth(mass)
 
