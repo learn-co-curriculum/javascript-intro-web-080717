@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    li.pass {
+      color: green;
+    }
+    li.fail {
+      color: red;
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <ul id='results'>
+  </ul>
+  <script>
+    var results = document.getElementById('results')
+
+    function assert(value, descr) {
+      var li = document.createElement('li')
+      li.innerHTML = descr
+      li.className = value ? 'pass' : 'fail'
+
+      results.appendChild(li)
+    }
+
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
